@@ -1,0 +1,18 @@
+step,domain,analysis,script
+01,All markers,FASTQ quality control,scripts/01_quality_control/01_fastqc_multiqc.sh
+02,Bacteria,ASV inference and taxonomic classification,scripts/02_sequence_processing/01_bacteria_16S.R
+03,Archaea,ASV inference and taxonomic classification,scripts/02_sequence_processing/02_archaea_16S.R
+04,Fungi,ASV inference and taxonomic classification,scripts/02_sequence_processing/03_fungi_ITS2.R
+05,All markers,Taxonomic composition,scripts/03_taxonomy/01_taxonomic_composition.R
+06,All markers,Shared and exclusive genera,scripts/03_taxonomy/02_shared_exclusive_genera.R
+07,All markers,Rarefaction and extrapolation,scripts/04_diversity/01_rarefaction_iNEXT.R
+08,All markers,Alpha diversity,scripts/04_diversity/02_alpha_diversity_models.R
+09,All markers,Beta diversity and PERMANOVA,scripts/04_diversity/03_beta_diversity_PERMANOVA.R
+10,Soil,Edaphic statistical analyses,scripts/05_soil/01_soil_chemical_analysis.R
+11,Soil,Edaphic figures,scripts/05_soil/02_soil_figures.R
+12,All markers and soil,MaAsLin2 genus–soil associations,scripts/06_associations/01_maaslin2_genus_soil.R
+13,Bacteria and archaea,Prepare PICRUSt2 ASV data,scripts/07_functional/01_prepare_16s_picrust2.R
+14,Bacteria and archaea,PICRUSt2 pathway prediction,scripts/07_functional/02_run_16s_picrust2.sh
+15,Bacteria and archaea,KO and pathway profiles,scripts/07_functional/03_picrust2_KO_pathways.R
+16,Fungi,ITS2 FUNGuild guild annotation (microeco),scripts/07_functional/04_funguild_ITS.R
+17,Fungi,ITS2 FungalTraits complementary annotation (microeco),scripts/07_functional/05_fungaltraits_ITS.R
